@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fichas Técnicas - APS</title>
+    <meta name="description" content="Fichas técnicas dos novos indicadores da Atenção Primária à Saúde">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            margin-top: 10px;
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .file-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .file-item {
+            background: white;
+            border: 2px solid #f8f9fa;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .file-item:hover {
+            border-color: #28a745;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .file-link {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .pdf-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            border-radius: 10px;
+            margin-right: 16px;
+            color: white;
+            font-size: 12px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .file-info {
+            flex: 1;
+        }
+        
+        .file-name {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: #2c3e50;
+        }
+        
+        .file-size {
+            font-size: 0.85em;
+            color: #6c757d;
+        }
+        
+        .download-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background: #218838;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+            background: #f8f9fa;
+        }
+        
+        .status {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .header { padding: 30px 20px; }
+            .content { padding: 20px; }
+            h1 { font-size: 1.8em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 Fichas Técnicas - APS</h1>
+            <p class="subtitle">Novos Indicadores da Atenção Primária à Saúde</p>
+        </div>
+        
+        <div class="content">
+            <div class="status">
+                ✅ Site publicado com sucesso! Todos os arquivos estão disponíveis para download.
+            </div>
+            
+            <div class="file-grid">
+                <div class="file-item">
+                    <a href="./01-mais-acesso-atencao-primaria-saude.pdf" class="file-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="file-info">
+                            <div class="file-name">Mais acesso à Atenção Primária à Saúde</div>
+                            <div class="file-size">Ficha técnica 01</div>
+                        </div>
+                        <button class="download-btn">Abrir</button>
+                    </a>
+                </div>
+                
+                <div class="file-item">
+                    <a href="./02-cuidado-desenvolvimento-infantil.pdf" class="file-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="file-info">
+                            <div class="file-name">Cuidado no desenvolvimento infantil</div>
+                            <div class="file-size">Ficha técnica 02</div>
+                        </div>
+                        <button class="download-btn">Abrir</button>
+                    </a>
+                </div>
+                
+                <div class="file-item">
+                    <a href="./03-cuidado-gestante-puerpera.pdf" class="file-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="file-info">
+                            <div class="file-name">Cuidado da gestante e puérpera</div>
+                            <div class="file-size">Ficha técnica 03</div>
+                        </div>
+                        <button class="download-btn">Abrir</button>
+                    </a>
+                </div>
+                
+                <div class="file-item">
+                    <a href="./04-cuidado-pessoa-diabetes.pdf" class="file-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="file-info">
+                            <div class="file-name">Cuidado da pessoa com diabetes</div>
+                            <div class="file-size">Ficha técnica 04</div>
+                        </div>
+                        <button class="download-btn">Abrir</button>
+                    </a>
+                </div>
+                
+                <div class="file-item">
+                    <a href="./05-cuidado-pessoa-hipertensao.pdf" class="file-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="file-info">
+                            <div class="file-name">Cuidado da pessoa com hipertensão</div>
+                            <div class="file-size">Ficha técnica 05</div>
+                        </div>
+                        <button class="download-btn">Abrir</button>
+                    </a>
+                </div>
+                
+                <div class="file-item">
+                    <a href="./06-cuidado-pessoa-idosa.pdf" class="file-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="file-info">
+                            <div class="file-name">Cuidado da pessoa idosa</div>
+                            <div class="file-size">Ficha técnica 06</div>
+                        </div>
+                        <button class="download-btn">Abrir</button>
+                    </a>
+                </div>
+                
+                <div class="file-item">
+                    <a href="./07-cuidado-mulher-prevencao-cancer-colo-utero-mama.pdf" class="file-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="file-info">
+                            <div class="file-name">Cuidado da mulher na prevenção do câncer do colo do útero e de mama</div>
+                            <div class="file-size">Ficha técnica 07</div>
+                        </div>
+                        <button class="download-btn">Abrir</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Ministério da Saúde</strong> • Secretaria de Atenção Primária à Saúde</p>
+            <p>Última atualização: <span id="date"></span></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString('pt-BR');
+    </script>
+</body>
+</html>
